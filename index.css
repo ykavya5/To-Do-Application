@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+#create-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#create-task input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#create-task button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#create-task button:hover {
+    background-color: #45a049;
+}
+
+
+#task-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-filter button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#task-filter button:hover {
+    background-color: #0b7dda;
+}
+
+#task-list-container {
+    list-style-type: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+.task-item.completed .task-name {
+    text-decoration: line-through;
+    color: #888;
+}
+
+
+.task-item button {
+    padding: 5px 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.task-edit {
+    background-color: #FFC107;
+}
+
+.task-edit:hover {
+    background-color: #ffb300;
+}
+
+.task-delete {
+    background-color: #f44336;
+}
+
+.task-delete:hover {
+    background-color: #e53935;
+}
+
+.task-complete {
+    background-color: #4CAF50;
+}
+
+.task-complete:hover {
+    background-color: #45a049;
+}
+
+
+#no-tasks {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.task-complete {
+    margin-left: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.task-item.completed .task-name {
+    text-decoration: line-through;
+    color: #888;
+}
+
